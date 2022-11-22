@@ -2,7 +2,7 @@ import React from "react";
 import { View} from "react-native";
 
 const Bird = ({birdBottom,birdLeft}) => {
-    const birdWidth = 50
+    let birdWidth = 50
     const birdHeight = 60
     return(
         <View style={{
@@ -11,7 +11,8 @@ const Bird = ({birdBottom,birdLeft}) => {
         width: birdWidth,
         height: birdHeight,
         bottom: birdBottom - (birdHeight/2),   
-        left: birdLeft - (birdHeight/2)
+        left: birdLeft - (birdHeight/2),
+        borderRadius: 25
         }} />
     )
 }
